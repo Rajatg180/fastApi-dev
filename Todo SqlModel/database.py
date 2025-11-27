@@ -16,7 +16,6 @@ def create_db_and_tables():
 # get a new session for interacting with the database
 # this session is used to perform CRUD operations
 # we are passing session as a dependency in our path operations
-
 def get_session():
     with Session(engine) as session:
         yield session
